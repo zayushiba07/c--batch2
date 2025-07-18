@@ -1,1 +1,1 @@
-size
+ cout << "eid \t ename " << endl;

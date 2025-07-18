@@ -11,7 +11,7 @@ int main()
 
     cout << "eid \t ename " << endl;
 
-    for(int i = 0; i <=size; i++)  // Correct loop range
+    for(int i = 0; i<size; i++)  // Correct loop range
     {
         cout << eid[i] << "\t" << ename[i] << endl;
     }

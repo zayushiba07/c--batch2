@@ -5,7 +5,6 @@ using namespace std;
 int main()
 {
     int size = 5;
-
     int eid[size] = {101, 102, 103, 104, 105};
     string ename[size] = {"poonam", "ankit", "rajesh", "nikita", "manish"};
 

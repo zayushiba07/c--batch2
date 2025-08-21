@@ -6,8 +6,7 @@ class student {
 private:
     int rno, age;
     string name;
-public:
-    void getdetails() {
+public:    void getdetails() {
         cout << "Enter roll no: ";
         cin >> rno;
         cout << "Enter name: ";

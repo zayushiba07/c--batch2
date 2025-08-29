@@ -6,11 +6,12 @@ class minplus
 private:
     int x[5];
 public:
-    minplus();
-    minplus operator+(); // Unary + (adds 2 to each element)
-    minplus operator-(); // Unary - (subtracts 2 from each element)
+    minplus();              
+    minplus operator+();    // unary + overloading
+    minplus operator-();    // unary - overloading
     void display();
 };
+
 
 minplus::minplus()
 {
@@ -29,35 +30,41 @@ void minplus::display()
     }
 }
 
+
 minplus minplus::operator+()
 {
-    minplus temp;
+    minplus temp;   
     for(int i = 0; i < 5; i++)
     {
-        temp.x[i] = x[i] + 2;
+        temp.x[i] = this->x[i] + 2;  
     }
     return temp;
 }
+
 
 minplus minplus::operator-()
 {
     minplus temp;
     for(int i = 0; i < 5; i++)
     {
-        temp.x[i] = x[i] - 2;
+        temp.x[i] = this->x[i] - 2;  
     }
     return temp;
 }
 
 int main()
 {
-    minplus m1;
-    cout << "Displaying m1:" << endl;
+    minplus m1;   
+    cout << "\nDisplaying m1:" << endl;
     m1.display();
     
-    minplus m2 = +m1; 
-    cout << "Displaying m2 (m1 with +2 to each element):" << endl;
+    minplus m2 = +m1;   
+    cout << "\nDisplaying m2 (m1 with +2 to each element):" << endl;
     m2.display();
+
+    minplus m3 = -m1;   
+    cout << "\nDisplaying m3 (m1 with -2 to each element):" << endl;
+    m3.display();
     
     return 0;
 }
